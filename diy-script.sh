@@ -37,21 +37,6 @@ git clone --depth=1 https://github.com/ilxp/luci-app-ikoolproxy package/luci-app
 git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
 git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
 git_sparse_clone openwrt-18.06 https://github.com/immortalwrt/luci applications/luci-app-eqos
-# 我自己添加的(git_sparse_clone是稀疏克隆)
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages linkease
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages homebox
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages speedtest-web
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-lib-fs
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-filetransfer
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-speedtest-web
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-netspeedtest
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-netdata
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-onliner
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-shutdown
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-store
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-transmission
 
 # Themes
 git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
