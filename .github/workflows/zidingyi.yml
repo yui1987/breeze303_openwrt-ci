@@ -96,11 +96,9 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
-    - name: Update feeds(升级feeds)
-      run: cd openwrt && ./scripts/feeds update -a
-
-    - name: Install feeds(安装feeds)
-      run: cd openwrt && ./scripts/feeds install -a    
+        cd $OPENWRT_PATH
+        ./scripts/feeds update -a
+        ./scripts/feeds install -a   
     ####################################################################
     #- name: Install Feeds(安装feeds)
     #  run: |
