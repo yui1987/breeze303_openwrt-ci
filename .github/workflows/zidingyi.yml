@@ -1,4 +1,4 @@
-name: IPQ60XX-zdy
+name: IPQ60XX-zdy-ipq6000-all
 
 on:
   workflow_dispatch:
