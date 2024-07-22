@@ -15,7 +15,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: IPQ60XX-ALL
+  FIRMWARE_TAG: IPQ60XX-ALL-zdy-1
   TZ: Asia/Shanghai
 
 jobs:
