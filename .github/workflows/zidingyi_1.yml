@@ -9,9 +9,9 @@ env:
   #REPO_BRANCH: kernel-6.6
   REPO_URL: https://github.com/coolsnowwolf/lede.git
   REPO_BRANCH: master
-  FEEDS_CONF: feeds.conf.default
+  FEEDS_CONF: feeds-1.conf.default
   CONFIG_FILE: configs/zdy-1.config
-  DIY_SCRIPT: diy-script.sh
+  DIY_SCRIPT: diy-script-1.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
