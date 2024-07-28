@@ -7,9 +7,9 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede.git
   REPO_BRANCH: master
-  FEEDS_CONF: feeds.conf.default
+  FEEDS_CONF: feeds-2.conf.default
   CONFIG_FILE: configs/zdy-2.config
-  DIY_SCRIPT: diy-script.sh
+  DIY_SCRIPT: diy-script-2.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
