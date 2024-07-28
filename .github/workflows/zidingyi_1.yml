@@ -93,7 +93,7 @@ jobs:
         
     - name: Load custom feeds(加载自定义feeds)
       run: |
-        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
+        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds-1.conf.default
         
     - name: Install Feeds(安装feeds)
       run: |
