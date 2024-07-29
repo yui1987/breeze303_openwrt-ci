@@ -6,7 +6,7 @@ on:
 
 env:
   REPO_URL: https://github.com/LiBwrt-op/openwrt-6.x.git
-  REPO_BRANCH: kernel-6.8
+  REPO_BRANCH: kernel-6.6
   FEEDS_CONF: feeds-3.conf.default
   CONFIG_FILE: configs/zdy-3.config
   DIY_SCRIPT: diy-script-3.sh
