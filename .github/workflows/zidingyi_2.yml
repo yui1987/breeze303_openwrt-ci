@@ -5,8 +5,8 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede.git
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/LiBwrt-op/openwrt-6.x.git
+  REPO_BRANCH: main
   FEEDS_CONF: feeds-2.conf.default
   CONFIG_FILE: configs/zdy-2.config
   DIY_SCRIPT: diy-script-2.sh
