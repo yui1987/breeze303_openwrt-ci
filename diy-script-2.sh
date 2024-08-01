@@ -9,6 +9,12 @@ sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 # TTYD 免登录
  sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
 
+# 添加自定义feeds源，需要在 openwrt 源码根目录下执行
+echo "src-git nas https://github.com/linkease/nas-packages.git;master" >> "feeds.conf.default"
+echo "src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main" >> "feeds.conf.default"
+echo "src-git istore https://github.com/linkease/istore;main" >> "feeds.conf.default"
+
+
 
 # 修复 hostapd 报错
 cp -f $GITHUB_WORKSPACE/scripts/011-fix-mbo-modules-build.patch package/network/services/hostapd/patches/011-fix-mbo-modules-build.patch
