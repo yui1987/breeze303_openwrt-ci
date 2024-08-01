@@ -91,7 +91,10 @@ jobs:
         
     - name: Load custom feeds(加载自定义feeds)
       run: |
-        [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds-3.conf.default
+        cd $OPENWRT_PATH
+        echo "src-git nas https://github.com/linkease/nas-packages.git;master" >> "feeds.conf.default"
+        echo "src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main" >> "feeds.conf.default"
+
         
     - name: Install Feeds(安装feeds)
       run: |
