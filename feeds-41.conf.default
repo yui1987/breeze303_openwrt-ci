@@ -9,3 +9,4 @@ src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages
 src-git nas https://github.com/linkease/nas-packages.git;master
 src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main
 src-git istore https://github.com/linkease/istore;main
+src-git kiddin9 https://github.com/kiddin9/openwrt-packages.git
