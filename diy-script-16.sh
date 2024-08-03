@@ -18,7 +18,7 @@ function git_sparse_clone() {
 }
 
 # 添加额外插件
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-bypass   ss  baocuo
+
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-adbyby-plus
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages adbyby
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-wrtbwmon
