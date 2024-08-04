@@ -1,4 +1,4 @@
-name: IPQ60XX-zdy-15
+name: IPQ60XX-zdy-21
 
 on:
   repository_dispatch:
@@ -24,7 +24,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: IPQ60XX-ALL-zdy-15
+  FIRMWARE_TAG: IPQ60XX-ALL-zdy-21
   TZ: Asia/Shanghai
 
 jobs:
