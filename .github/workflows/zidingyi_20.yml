@@ -13,7 +13,7 @@ env:
   #REPO_URL: https://github.com/coolsnowwolf/lede.git
   #REPO_BRANCH: master
   FEEDS_CONF: feeds-11.conf.default
-  CONFIG_FILE: zdy-11.config
+  CONFIG_FILE: zdy-15.config
   DIY_SCRIPT: diy-script-11.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
