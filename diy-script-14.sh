@@ -28,8 +28,8 @@ git_sparse_clone master https://github.com/kiddin9/openwrt-packages ddns-go
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-disks-info
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-netspeedtest
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages homebox
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-speedtest-web
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages speedtest-web
+# git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-speedtest-web
+# git_sparse_clone master https://github.com/kiddin9/openwrt-packages speedtest-web
 # git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-unblockneteasemusic
 
 # git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-onliner
