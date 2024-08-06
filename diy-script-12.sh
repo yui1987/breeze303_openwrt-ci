@@ -48,8 +48,8 @@ chmod 755 package/luci-app-onliner/root/usr/share/onliner/setnlbw.sh
 # git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-onliner
 
 # 科学
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-bypass
-git clone --depth=1 -b main https://github.com/fw876/helloworld package/luci-app-ssr-plus
+# git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-bypass
+# git clone --depth=1 -b main https://github.com/fw876/helloworld package/luci-app-ssr-plus
 # git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-v2raya
 # git_sparse_clone master https://github.com/kiddin9/openwrt-packages v2raya
 # git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
