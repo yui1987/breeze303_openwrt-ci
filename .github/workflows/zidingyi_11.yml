@@ -10,11 +10,13 @@ env:
   #REPO_BRANCH: kernel-6.6
   #REPO_BRANCH: kernel-6.8
   #REPO_BRANCH: test
+  #REPO_URL: https://github.com/VIKINGYFY/immortalwrt.git
+  #REPO_BRANCH: main
   #REPO_URL: https://github.com/coolsnowwolf/lede.git
   #REPO_BRANCH: master
   FEEDS_CONF: feeds-11.conf.default
   CONFIG_FILE: zdy-11.config
-  DIY_SCRIPT: diy-script-11.sh
+  DIY_SCRIPT: diy-script-12.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
@@ -97,6 +99,7 @@ jobs:
     - name: Load custom feeds(加载自定义feeds)
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
+
         
     - name: Install Feeds(安装feeds)
       run: |
@@ -114,7 +117,7 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_SCRIPT
         $GITHUB_WORKSPACE/scripts/preset-clash-core.sh $CLASH_KERNEL
         $GITHUB_WORKSPACE/scripts/preset-terminal-tools.sh
-        
+
     - name: Download DL Package(下载DL软件包)
       run: |
         cd $OPENWRT_PATH
