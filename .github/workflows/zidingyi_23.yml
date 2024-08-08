@@ -1,4 +1,4 @@
-name: IPQ60XX-zdy-23
+name: k2p
 
 on:
   repository_dispatch:
@@ -18,13 +18,13 @@ env:
   #REPO_BRANCH: main
   
   FEEDS_CONF: feeds-14.conf.default
-  CONFIG_FILE: zdy-17.config
-  DIY_SCRIPT: diy-script-14.sh
+  CONFIG_FILE: k2p.config
+  DIY_SCRIPT: diy-script-11.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: IPQ60XX-ALL-zdy-23
+  FIRMWARE_TAG: k2p
   TZ: Asia/Shanghai
 
 jobs:
