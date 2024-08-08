@@ -17,7 +17,9 @@ git_sparse_clone master https://github.com/kiddin9/openwrt-packages wrtbwmon
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-disks-info
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
+git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
 git_sparse_clone openwrt-18.06 https://github.com/immortalwrt/luci applications/luci-app-eqos
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-eqosplus
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-alist
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages alist
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-cpulimit
@@ -39,5 +41,6 @@ git clone --depth=1 https://github.com/xiaoqingfengATGH/luci-theme-infinityfreed
 git_sparse_clone main https://github.com/haiibo/packages luci-theme-atmaterial luci-theme-opentomcat luci-theme-netgear
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+
 ./scripts/feeds update -a
 ./scripts/feeds install -a
