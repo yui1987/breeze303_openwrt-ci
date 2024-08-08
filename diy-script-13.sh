@@ -1,4 +1,3 @@
-
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
   branch="$1" repourl="$2" && shift 2
@@ -8,10 +7,8 @@ function git_sparse_clone() {
   mv -f $@ ../package
   cd .. && rm -rf $repodir
 }
-
 # TTYD 免登录
  sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
-
 
 # 稀疏克隆软件     目录为主目录下   packages
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-adbyby-plus
@@ -19,12 +16,16 @@ git_sparse_clone master https://github.com/kiddin9/openwrt-packages adbyby
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-wrtbwmon
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages wrtbwmon
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-lib-taskd
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-disks-info
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages linkease
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages ffmpeg-remux
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages linkmount
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-store
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
+
 # git_sparse_clone master https://github.com/coolsnowwolf/packages net
 # git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
 # git_sparse_clone openwrt-18.06 https://github.com/immortalwrt/luci applications/luci-app-eqos
@@ -57,8 +58,6 @@ chmod 755 package/luci-app-onliner/root/usr/share/onliner/setnlbw.sh
 # git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
 # passwall和易有云文件管理在feed里
 
-
-
 # 主题
 git clone --depth=1 -b 18.06 https://github.com/kiddin9/luci-theme-edge package/luci-theme-edge
 git clone --depth=1 https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/luci-theme-infinityfreedom
@@ -66,7 +65,12 @@ git_sparse_clone main https://github.com/haiibo/packages luci-theme-atmaterial l
 # git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 # git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
 
-
+# 可能用到的外部支持  
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-shadowsocks-libev
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages shadowsocksr-libev
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-shadowsocks-rust
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages shadowsocks-rust
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+
