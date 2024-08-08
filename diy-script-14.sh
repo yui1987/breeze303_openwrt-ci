@@ -10,6 +10,8 @@ function git_sparse_clone() {
 # TTYD 免登录
  sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
 # 稀疏克隆软件     目录为主目录下   packages
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-opkg
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages opkg
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-adbyby-plus
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages adbyby
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-wrtbwmon
