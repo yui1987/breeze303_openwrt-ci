@@ -22,8 +22,8 @@ git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
 git_sparse_clone openwrt-18.06 https://github.com/immortalwrt/luci applications/luci-app-eqos
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-eqosplus
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-alist
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages alist
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-alist
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages alist
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-cpulimit
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages cpulimit
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-ddns-go
