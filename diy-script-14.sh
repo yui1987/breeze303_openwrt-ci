@@ -16,7 +16,6 @@ git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-adb
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages adbyby
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-wrtbwmon
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages wrtbwmon
-# git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-disks-info
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
@@ -34,6 +33,8 @@ sed -i '$i uci set nlbwmon.@nlbwmon[0].refresh_interval=2s' package/lean/default
 sed -i '$i uci commit nlbwmon' package/lean/default-settings/files/zzz-default-settings
 chmod 755 package/luci-app-onliner/root/usr/share/onliner/setnlbw.sh
 # 科学
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-v2raya
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages v2raya
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-bypass
 git clone --depth=1 -b main https://github.com/fw876/helloworld package/luci-app-ssr-plus
 git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclash
