@@ -17,9 +17,9 @@ env:
   #REPO_URL: https://github.com/King-Of-Knights/openwrt-6.x.git
   #REPO_BRANCH: main
   
-  FEEDS_CONF: feeds-15.conf.default
-  CONFIG_FILE: zdy-18.config
-  DIY_SCRIPT: diy-script-11.sh
+  FEEDS_CONF: feeds-14.conf.default
+  CONFIG_FILE: zdy-13.config
+  DIY_SCRIPT: diy-script-14.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
