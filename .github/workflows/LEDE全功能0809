@@ -1,4 +1,4 @@
-name: IPQ60XX-LEDE全-jdcax1800pro-2
+name: LEDE全0809-jdcax1800pro
 
 on:
   repository_dispatch:
@@ -24,7 +24,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: IPQ60XX-LEDE全-jdcax1800pro-2
+  FIRMWARE_TAG: LEDE全0809-jdcax1800pro
   TZ: Asia/Shanghai
 
 jobs:
