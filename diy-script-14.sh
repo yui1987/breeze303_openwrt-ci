@@ -16,7 +16,7 @@ git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-adb
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages adbyby
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-wrtbwmon
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages wrtbwmon
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin
+# git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-jellyfin
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-disks-info
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 git clone --depth=1 https://github.com/kongfl888/luci-app-adguardhome package/luci-app-adguardhome
