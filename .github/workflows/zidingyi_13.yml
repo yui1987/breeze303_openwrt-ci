@@ -16,7 +16,7 @@ env:
   #REPO_BRANCH: master
   FEEDS_CONF: feeds-11.conf.default
   CONFIG_FILE: zdy-15.config
-  DIY_SCRIPT: diy-script-12.sh
+  DIY_SCRIPT: diy-script-13.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
