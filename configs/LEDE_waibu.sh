@@ -11,6 +11,12 @@ function git_sparse_clone() {
 }
 # TTYD 免登录
  sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
+
+ # 外部软件
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-netspeedtest
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages homebox
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-speedtest-web
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages speedtest-web
  
  # 在线用户
 git_sparse_clone main https://github.com/haiibo/packages luci-app-onliner
