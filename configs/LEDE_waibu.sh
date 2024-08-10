@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
   branch="$1" repourl="$2" && shift 2
@@ -30,5 +32,3 @@ git_sparse_clone master https://github.com/vernesong/OpenClash luci-app-openclas
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
-
-#   make menuconfig
