@@ -14,7 +14,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede.git
   REPO_BRANCH: master
 
-  FEEDS_CONF: configs/LEDE_4.default
+  FEEDS_CONF: configs/LEDE_1.conf.default
   CONFIG_FILE: configs/LEDE_4.config
   DIY_SCRIPT: configs/LEDE_1.sh
   CLASH_KERNEL: amd64
