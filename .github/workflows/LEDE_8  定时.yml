@@ -1,8 +1,10 @@
 name: LEDE_8
 
 on:
-  repository_dispatch:
   workflow_dispatch:
+  schedule:
+    - cron: 0 19 * * *
+
 
 env:
   #REPO_URL: https://github.com/LiBwrt-op/openwrt-6.x.git
