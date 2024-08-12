@@ -40,6 +40,9 @@ git clone --depth=1 https://github.com/xiaoqingfengATGH/luci-theme-infinityfreed
 git_sparse_clone main https://github.com/haiibo/packages luci-theme-atmaterial luci-theme-opentomcat luci-theme-netgear
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+# 依赖
+git_sparse_clone master https://github.com/kiddin9/openwrt-packages shadowsocksr-libev
+git_sparse_clone master https://github.com/coolsnowwolf/packages net/shadowsocks-libev
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
