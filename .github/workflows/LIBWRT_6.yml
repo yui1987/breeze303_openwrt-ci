@@ -1,4 +1,4 @@
-name: LIBWRT_1
+name: LIBWRT_6
 
 on:
   repository_dispatch:
@@ -21,7 +21,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: LIBWRT_1
+  FIRMWARE_TAG: LIBWRT_6
   TZ: Asia/Shanghai
 
 jobs:
