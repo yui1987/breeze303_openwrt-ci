@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Git稀疏克隆，只克隆指定目录到本地
 function git_sparse_clone() {
   branch="$1" repourl="$2" && shift 2
@@ -9,7 +10,7 @@ function git_sparse_clone() {
   cd .. && rm -rf $repodir
 }
 # TTYD 免登录
- sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
+sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.config
 # 稀疏克隆软件     目录为主目录下   packages
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-adbyby-plus
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages adbyby
