@@ -14,10 +14,10 @@ env:
   #REPO_URL: https://github.com/coolsnowwolf/lede.git
   #REPO_BRANCH: master
 
-  FEEDS_CONF: configs2/LIBWRT_1.conf.default
-  CONFIG_FILE: configs2/LIBWRT_6.config
-  DIY_SCRIPT: configs2/LIBWRT_2.sh
-  CLASH_KERNEL: amd64
+  FEEDS_CONF: configs/LIBWRT_1.conf.default
+  CONFIG_FILE: configs/LIBWRT_6.config
+  DIY_SCRIPT: configs/LIBWRT_2.sh
+  CLASH_KERNEL: arm64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
   FIRMWARE_RELEASE: true
