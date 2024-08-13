@@ -16,7 +16,7 @@ env:
 
   FEEDS_CONF: configs2/LIBWRT_2.conf.default
   CONFIG_FILE: configs2/LIBWRT_4.config
-  DIY_SCRIPT: configs2/LIBWRT_2.sh
+  DIY_SCRIPT: configs2/LEDE_waibu.sh
   CLASH_KERNEL: arm64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
