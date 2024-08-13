@@ -17,7 +17,7 @@ env:
   FEEDS_CONF: configs/LEDE_1.conf.default
   CONFIG_FILE: configs/LEDE_2.config
   DIY_SCRIPT: configs/LEDE_waibu.sh
-  CLASH_KERNEL: amd64
+  CLASH_KERNEL: arm64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
   FIRMWARE_RELEASE: true
