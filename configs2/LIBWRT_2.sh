@@ -18,17 +18,18 @@ git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-adb
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages adbyby
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-wrtbwmon
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages wrtbwmon
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-lib-taskd
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages taskd
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-lib-xterm
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-disks-info
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages linkease
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages ffmpeg-remux
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages linkmount
-git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-store
 git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-eqosplus
+
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-linkease
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages linkease
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages ffmpeg-remux
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages linkmount
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-app-store
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-lib-taskd
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages taskd
+#git_sparse_clone master https://github.com/kiddin9/openwrt-packages luci-lib-xterm
 
 # 在线用户
 git_sparse_clone main https://github.com/haiibo/packages luci-app-onliner
