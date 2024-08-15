@@ -22,7 +22,7 @@ env:
 
   FEEDS_CONF: configs/VIKING_2.conf.default
   CONFIG_FILE: configs/VIKING_4.config
-  DIY_SCRIPT: configs/VIKING_1.sh
+  DIY_SCRIPT: configs/VIKING_2.sh
   CLASH_KERNEL: arm64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: true
